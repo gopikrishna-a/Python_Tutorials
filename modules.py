@@ -1,4 +1,4 @@
-#Module file --> file 1
+#Module file ( User defined module )--> file 1
 def fish():
     print 'I am a una Fish'
 
@@ -9,3 +9,16 @@ def fish():
 import tuna
 
 tuna.fish()
+
+
+#======================================================
+# Python In built module to printing random number
+
+import random
+x = random.randrange(1,100)
+print x
+
+
+
+
+
