@@ -4,4 +4,5 @@ string = file.read()
 match = re.findall(r'[\w\.-]+@[\w\.-]+', string)
 for i in match:
     print i
+file.close()
     
