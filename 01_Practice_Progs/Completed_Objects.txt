@@ -1,0 +1,47 @@
+test_grid_filedistribution_original.py
+test_record_nsec.py
+test_smartfolder_groupby.py
+test_authpolicy.py
+test_discoverytask.py
+test_discoverytaskport.py
+test_discovery_devicesupportbundle.py
+test_grid_filedistribution_original.py
+test_grid_dns_phase_2.py 
+test_zone_auth_F_Call_phase_2.py 
+test_zone_forward_F_Call_phase_2.py
+test_zone_stub_F_Call_phase_2.py
+test_zone_rp_F_Call_phase_2.py
+test_zone_delegated_F_Call_phase_2.py
+
+
+
+
+
+
+
+
+
+
+
+8.1.1-353399
+
+
+nohup config_grid -P /tmp/gk/ -T HA -F /import/release_archive/dns/8x/8.1/OFFICIAL/NIOS_8.1.1_353399_2017-04-08-16-02-10_x86_64/ForSupport/nios-8.1.1-353399-2017-04-08-16-02-10_x86_64.bin eng-lab-1465 -H 'vm-13-06d:vm-02-06c -F /import/release_archive/dns/8x/8.1/OFFICIAL/NIOS_8.1.1_353399_2017-04-08-16-02-10_x86_64/ForSupport/nios-8.1.1-353399-2017-04-08-16-02-10-160G-1410.ova' -Z &
+
+
+
+
+
+nohup config_grid -P /tmp/rg/ -T HA -F /import/release_archive/dns/6x/6.12/OFFICIAL/NIOS_6.12.25_353323_2017-04-06-18-05-31_x86_64/ForSupport/nios-6.12.25-353323-2017-04-06-18-05-31_x86_64.bin eng-lab-1240 -H 'vm-11-03c:vm-11-18 -F /import/release_archive/dns/6x/6.12/OFFICIAL/NIOS_6.12.25_353323_2017-04-06-18-05-31_x86_64/ForSupport/nios-6.12.25-353323-2017-04-06-18-05-31-160G-1410.ova' -Z &
+
+
+
+
+
+tail -f nohup
+
+
+
+/import/release_archive/dns/8x/8.1/OFFICIAL/NIOS_8.1.1_353399_2017-04-08-16-02-10_x86_64/ForSupport/
+
+
