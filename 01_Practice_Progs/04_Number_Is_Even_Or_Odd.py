@@ -5,5 +5,9 @@ def Odd_Or_Even(n):
        print "Number",n,"is Odd\n"
 
 while True:
-    a = int(raw_input("Enter Ur Number:"))
-    Odd_Or_Even(a)
+    a = raw_input("Enter Ur Number:")
+    try:
+        a = int(a)
+        Odd_Or_Even(a)
+    except ValueError:
+        print "Enter Only Numbers\n"
