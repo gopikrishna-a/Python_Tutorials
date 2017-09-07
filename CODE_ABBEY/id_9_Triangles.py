@@ -1,11 +1,11 @@
 """
 triangle inequality theorem
 
-a+b>ca+b>c
+A + B > C
+B + C > A
+C + A > B
 
-a+c>ba+c>b
-
-b+c>ab+c>a
+A,B,C are sides of a triangle
 """
 
 
