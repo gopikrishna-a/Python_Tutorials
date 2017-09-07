@@ -1,3 +1,15 @@
+"""
+triangle inequality theorem
+
+a+b>ca+b>c
+
+a+c>ba+c>b
+
+b+c>ab+c>a
+"""
+
+
+
 n = int(raw_input("Enter No. of Inputs : ").strip())
 l = []
 for i in range(0,n):
