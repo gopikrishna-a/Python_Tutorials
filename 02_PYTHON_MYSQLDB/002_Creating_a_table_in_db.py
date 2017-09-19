@@ -1,7 +1,7 @@
 import MySQLdb
 
 
-db = MySQLdb.connect('localhost','root','asm123','TESTDB')
+db = MySQLdb.connect('localhost','root','password','TESTDB')
 cursor = db.cursor()
 
 #Try to create the STUDENTS table if not daabase
