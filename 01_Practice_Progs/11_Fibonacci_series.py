@@ -83,6 +83,26 @@ for n in range(0,20000):
     print (fib(n))
     
 
+    
+    
+    
+#METHOD -----> 5
+#Fibonacci series of n numbers 
+    
+    
+b = 0
+c = 1
+n = 10
+
+for i in range(10):
+    if i <= 1:
+        temp = i
+    else:
+        temp = b + c
+        b = c
+        c = temp
+        
+    print temp,
 
 
 
