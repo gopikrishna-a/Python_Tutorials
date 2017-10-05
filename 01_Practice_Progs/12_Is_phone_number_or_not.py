@@ -1,4 +1,5 @@
 
+#Method -1
 #With out regx
 #number format = '415-555-1234'
 
@@ -33,3 +34,21 @@ for i in range(len(message)):
         numberfound = True
 if not numberfound:
     print( 'could not found any phone numbers')
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+#Method -2
+#With out regx  
+    
+import re
+message = 'call me on this number 415-555-1234 or call to this 415-565-1234 phone number'
+
+obj = re.compile(r'\d\d\d-\d\d\d-\d\d\d')
+    
