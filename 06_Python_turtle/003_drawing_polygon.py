@@ -18,3 +18,5 @@ def draw_polygon(t, n, length):
 bob = turtle.Turtle()
 draw_polygon(bob, 8, 100)
 
+
+#out put will be a polygon of n sides i.e 8
