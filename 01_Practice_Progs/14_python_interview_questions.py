@@ -100,19 +100,19 @@ del dict['c']
 
 def write_in_file(file_name):
 
-    file = open(file_name,'r')      #opening file
-    file.read()                     #reading content of file
-    
-    new_file = open('new.txt','w')
-    
-    for line in file:
-        new_file.write(line+'ADDING_PATTERN') #appending pattern
-        
-    file.close()                    #closing file 1
-    new_file.close()                #closing file 2
-    
+	file = open('123.txt','r')      #opening file
+	new_file = open('new.txt','w')  #reading content of file
 
-write_in_file('text.txt')           #calling function
+	for line in file:
+	    print(line)
+	    line = line.strip('\n')
+	    new_file.write(line+' ADDING_PATTERN\n') #appending pattern
+
+	file.close()
+	new_file.close()
+
+
+print(write_in_file('123.txt'))
 
 
 
