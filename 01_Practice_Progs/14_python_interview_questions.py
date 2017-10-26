@@ -156,6 +156,8 @@ print(result.adding_it([1,2,3,4,5]))
 
 # 6. function to run linux command
 
+#Method	-----------> 1
+
 
 import subprocess
 
@@ -164,6 +166,24 @@ def run_command(cmd):
     return out
     
 print(run_command('ls'))
+
+
+
+#Method	-----------> 2
+
+import commands
+
+def run_command(cmd):
+    out = commands.getoutput(cmd)
+    return out
+    
+print(run_command('ls'))
+
+
+
+
+
+
 
 ###############################################################################################################
 
