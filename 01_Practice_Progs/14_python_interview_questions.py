@@ -124,7 +124,7 @@ print(write_in_file('123.txt'))
 import re
 
 text = 'this is my email id testing123asm@asmltd.com'
-obj = re.compile(r'[a-zA-Z0-9_.]+@+[a-zA-Z0-9_.]+')
+obj = re.compile(r'[a-z0-9.]+@+[a-z0-9.]+')
 
 print(re.findall(obj,text))
 
