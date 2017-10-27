@@ -39,3 +39,11 @@ print(l)
 
 
 ###################################################################################
+
+
+
+import re
+
+txt = "Gopikrishna ankdjm sjd Asm "
+obj = re.compile(r'[A-Z]+[a-z]+')
+print(re.findall(obj,txt))
