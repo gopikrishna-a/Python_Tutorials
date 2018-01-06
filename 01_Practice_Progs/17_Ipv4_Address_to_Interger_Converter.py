@@ -1,6 +1,22 @@
 """ The following function return the equivalent Integer value for the given IPv4 Address If the given IP address is Invalid Then it will returns Invalid message"""
 
+"""
 
+Conversion of IPv4 Address to Integer:
+======================================
+
+Ex: 10.35.4.216
+
+
+1 st Octet -->	10
+2 nd Octet --> 	35
+3 rd Octet -->	4
+4 th Octet -->	216
+
+formula: 
+result = (first octet * 256^3) + (second octet * 256^2) + (third octet * 256) + (fourth octet)
+
+"""
 
 def Ipv4_to_integer(address):
     address = address.split(".")
