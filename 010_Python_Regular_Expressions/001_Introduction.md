@@ -11,7 +11,7 @@
 |  \D           | anything other than Digit                    |
 |  \W           | anything other than word character           |
 |  \S           | anything other than White space character    |
-|  \.           | A period                                     |
+|  \\.           | A period                                     |
 
 
 ### Regular Expression Quanitifiers
@@ -69,9 +69,3 @@
  ### Why we should used r before the pattern
 
  In order to getting rid of escape character '\' while writing regex pattern we should use r before the pattern.
-
-
- 
-
-
-
