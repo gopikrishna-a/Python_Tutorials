@@ -145,7 +145,7 @@
 ### dict.popitem()
 
 * Takes no arguments
-* Returns any random key, value pair which was removed.
+* Returns tuple containing any one random key, value pair which was removed.
 
 
 #### **popitem() method to delete a random key, value pair**
@@ -155,6 +155,22 @@
 		('age', 28)
 		>>> student
 		{'male': True, 'name': 'Stark'}
+		>>>
+
+### dict.update()
+
+* Update keys and values in a dict with another set of key value pair
+* Takes one argument i.e dict
+* Returns None
+* updates the dict by appending given dict.
+
+
+#### **update() method to delete a random key, value pair**
+
+		>>> my_list = {'male': True, 'name': 'Stark'}
+		>>> my_list.update({"email": "tony@stark.com", "avenger": True})
+		>>> my_list
+		{'avenger': True, 'male': True, 'name': 'Stark', 'email': 'tony@stark.com'}
 		>>>
 
 
