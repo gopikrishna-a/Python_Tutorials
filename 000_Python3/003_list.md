@@ -1,3 +1,11 @@
+# Python List
+
+* A **list** is a collection which is ordered and changeable. In Python lists are written with square brackets.
+* **Example List:**
+		
+		my_list = ['Tony', True, 24, 'Hi there']
+
+
 # List Methods
 
 ### what is List in Python
