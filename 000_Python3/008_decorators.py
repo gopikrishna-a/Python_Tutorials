@@ -70,3 +70,27 @@ def say():
     return "good morning"
 
 print(say())
+
+
+
+#General decorator for multiple functions
+
+
+def general_dec(func):
+    def inner(*args):
+        is_zero = args[1:]
+        for i in is_zero:
+            if i == 0:
+                return "Please provice non- zero denominator"
+        return func(*args)
+    return inner
+@general_dec
+def div_one(a, b):
+    return a/b
+
+@general_dec
+def dive_two(a, b, c):
+    return a/b/c
+
+print(div_one(1, 0))
+print(dive_two(1, 3, 6))
