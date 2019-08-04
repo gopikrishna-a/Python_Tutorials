@@ -94,3 +94,23 @@ def dive_two(a, b, c):
 
 print(div_one(1, 0))
 print(dive_two(1, 3, 6))
+
+
+#Class Decorator
+def method_dec(method):
+    def inner(name_ref):
+        if name_ref.name == "gopikrishna":
+            print("Hello!! ", name_ref.name)
+        else:
+            method(name_ref)
+    return inner
+    
+class Printing(object):
+    def __init__(self, name):
+        self.name = name
+    @method_dec
+    def print_name(self):
+        print("Your name is: ", self.name)
+
+a = Printing("gopikrishna")
+a.print_name()
