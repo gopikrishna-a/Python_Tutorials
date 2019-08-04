@@ -96,7 +96,7 @@ print(div_one(1, 0))
 print(dive_two(1, 3, 6))
 
 
-#Class Decorator
+#Method Decorator
 def method_dec(method):
     def inner(name_ref):
         if name_ref.name == "gopikrishna":
