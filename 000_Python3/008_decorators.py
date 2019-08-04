@@ -52,3 +52,21 @@ def say():
     return "good morning"
 
 print(say())
+
+
+#Pass parameters to a decorator function
+
+def outer(name):
+    def upper_dec(func):
+        """Decorator one two change the case to lower to upper"""
+        def inner():
+            res = func()
+            return res.upper() + name.upper()
+        return inner
+    return upper_dec
+
+@outer(" gopikrishna")
+def say():
+    return "good morning"
+
+print(say())
