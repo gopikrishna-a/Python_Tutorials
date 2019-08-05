@@ -130,3 +130,50 @@ def greet():
     return "good morniing"
 
 print(greet())
+
+
+#Propetry Decorator Example
+#property decorator 
+class Dec:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+    @property
+    def msg(self):
+        return f"Hey {self.name} your grade is {self.grade}"
+
+var = Dec('venom', 'A')
+print(f"grade {var.grade}")
+print(f"name {var.name}")
+print(var.msg)
+var.grade = "D"
+print(var.grade)
+
+
+#Property decorator with setter
+
+class Dec:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+    @property
+    def msg(self):
+        return f"Hey {self.name} your grade is {self.grade}"
+    @msg.setter
+    def msg(self, msg):
+        sent = msg.split()
+        self.name = sent[0]
+        self.grade = sent[-1]
+
+
+
+var = Dec('venom', 'A')
+print(f"grade {var.grade}")
+print(f"name {var.name}")
+print(var.msg)
+var.grade = "D"
+print(var.grade)
+print(var.msg)
+var.msg = "symbiote B"
+print(var.msg)
+print(var.msg)
